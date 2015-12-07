@@ -1,1 +1,6 @@
-.dim{opacity: 0.0}
+.dim {
+  opacity: 0.0
+}
+div {
+  display: block;
+}
