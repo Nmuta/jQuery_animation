@@ -6,14 +6,29 @@ button {
   font-size: 15px;
 }
 
+img {
+  height: 100px%;
+  width: 100px;
+}
+
 #wrapper {
   text-align: center;
 }
 
 #container {
   display: block;
-  font-size: Arial;
+  font-family: Arial;
   text-align: center;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+    border: 1px solid gray;
+    text-align: left;
+    padding-left: 5px;
 }
 
 #fun {
