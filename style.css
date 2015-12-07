@@ -1,1 +1,8 @@
-.dim{opacity: 0.0}
+.dim{opacity: 0.0;
+    padding: 20px;
+    border: solid 2px black;}
+
+#container{
+  margin: auto 10px;
+  width: 500px;
+}
