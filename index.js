@@ -28,7 +28,7 @@ for (var i = 0; i < bey.length; i++) {
   var title = bey[i]["trackName"];
   var vidUrl = bey[i]["trackViewUrl"];
   var thumbnail = bey[i]["artworkUrl30"];
-  $("#container").append('<tr><td>' +title+ '</td><td>' +vidUrl+ '</td><td><img src="'+thumbnail+'"></td></tr>' + '</div>');
+  $("#container").append('<tr><td>' +title+ '</td><td><a href="'+vidUrl+'">'+vidUrl+'</a>' + '</td><td><img src="'+thumbnail+'"></td></tr>' + '</div>');
   var my_div = $("#"+my_id);
   my_div.delay(timer).animate({"opacity": 1.0}, 3000, function() {} );
   timer +=50;
