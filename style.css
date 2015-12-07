@@ -1,1 +1,31 @@
-.dim{opacity: 0.0}
+.dim{
+  opacity: 0.0
+}
+
+img {
+  width: 100px;
+  border: solid 1px gold;
+}
+
+.shown {
+  border: solid 1px black;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(100%);
+}
+
+body {
+  background-color: #EEEEFF;
+  font-family: arial, sans-serif;
+}
+
+#container > div {
+  display: inline;
+}
+
+p {
+  width: 100px;
+  display: inline-block;
+}
+p.title {
+  font-size: 8px;
+}
