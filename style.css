@@ -1,1 +1,24 @@
-.dim{opacity: 0.0}
+.dim {
+  opacity: 0.0
+}
+
+button {
+  font-size: 15px;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+#container {
+  display: block;
+  font-size: Arial;
+  text-align: center;
+}
+
+#fun {
+  font-family: Arial;
+  font-size: 40px;
+  color: pink;
+  text-align: center;
+}
