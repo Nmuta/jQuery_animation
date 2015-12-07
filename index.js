@@ -23,6 +23,7 @@ $(document).ready(function(){
   })
   $('#remove').click(function (){
     $('#container').find('div').remove()
+
   })
 
 });
