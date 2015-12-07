@@ -1,19 +1,31 @@
-.dim{opacity: 0.0}
+.dim{
+  opacity: 0.0
+}
+
+img {
+  width: 100px;
+  border: solid 1px gold;
+}
+
+.shown {
+  border: solid 1px black;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(100%);
+}
 
 body {
   background-color: #EEEEFF;
   font-family: arial, sans-serif;
 }
 
-#container div {
-  border: solid 1px #aaa;
-  padding: 0.25em;
-  font-size: 13pt;
-  opacity: 0.0;
+#container > div {
+  display: inline;
 }
-#container div:nth-child(even){
-  background-color: rgb(231, 231, 113);
+
+p {
+  width: 100px;
+  display: inline-block;
 }
-#container div:nth-child(odd){
-  background-color: #DDF;
+p.title {
+  font-size: 8px;
 }
