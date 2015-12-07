@@ -22,7 +22,8 @@ img{
   background-color: grey;
   border-radius: 20px;
   text-align: center;
-  display: inline-block;
+  float: left;
+  display: none;
 }
 
 .bookContainer h2{

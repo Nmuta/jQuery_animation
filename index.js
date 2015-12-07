@@ -3,6 +3,8 @@ $(document).ready(function(){
   $('#booksearch').click(function(){
     var sarch = $('#book').val();
     console.log("Bing Bong");
+    $('#container').remove();
+    $('body').append('<div id="container"></div>');
 
     var getter = $.ajax({
       url:"https://www.googleapis.com/books/v1/volumes?q='" + sarch + "'",
@@ -22,10 +24,7 @@ $(document).ready(function(){
         newObject.rating = volumeInfo.averageRating;
         return newObject;
       });
-
-      displayArray.forEach(function(item){
-        bringToLife(item);
-      })
+      displayArray.forEach(bringToLife);
 
     });
 
@@ -39,7 +38,7 @@ $(document).ready(function(){
 })
 
 
-function bringToLife(stuff){
+function bringToLife(stuff, i){
   var newDiv = $("<div class='bookContainer'></div>").appendTo('#container');
   $(newDiv).append("<h2>" + stuff.title + "</h2>");
   $(newDiv).append("<img src='" + stuff.image + "'/>");
@@ -49,6 +48,7 @@ function bringToLife(stuff){
   $(authorInfo).append('<p>' + stuff.author + '</p>');
   $(misc).append('<p>Page Count:' + stuff.pageCount + '</p>');
   $(misc).append('<p>Rating :' + stuff.rating + '</p>');
+  $(newDiv).delay(800+(i*50)).fadeIn(500);
 
 }
 
