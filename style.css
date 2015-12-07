@@ -1,6 +1,29 @@
+*{
+  letter-spacing: 3px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  background: url("http://i.imgur.com/WdJLMuJ.jpg");
+  text-align: center;
+  background-attachment: fixed;
+}
 .dim {
   opacity: 0.0
 }
 div {
   display: block;
+}
+#user_input{
+  width: 50vw;
+  margin-bottom: 7vh;
+}
+.dim {
+  margin-bottom: 3vh;
+}
+button {
+  color: white;
+  margin-bottom: 5vh;
+}
+#container {
+  line-height: 50px;
+  color: white;
 }
