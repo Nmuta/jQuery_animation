@@ -1,1 +1,19 @@
 .dim{opacity: 0.0}
+
+body {
+  background-color: #EEEEFF;
+  font-family: arial, sans-serif;
+}
+
+#container div {
+  border: solid 1px #aaa;
+  padding: 0.25em;
+  font-size: 13pt;
+  opacity: 0.0;
+}
+#container div:nth-child(even){
+  background-color: rgb(231, 231, 113);
+}
+#container div:nth-child(odd){
+  background-color: #DDF;
+}
