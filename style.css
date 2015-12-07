@@ -1,1 +1,6 @@
 .dim{opacity: 0.0}
+
+.newBook {
+  position:relative;
+  left: 50%;
+}
