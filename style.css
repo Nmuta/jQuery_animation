@@ -1,1 +1,4 @@
-.dim{opacity: 0.0}
+.sName{
+  display: block;
+  opacity: 0;
+}
