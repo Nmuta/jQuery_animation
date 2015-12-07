@@ -1,22 +1,27 @@
+$(document).ready(function(){
+ $("button").click(function(){
 
-$("button").click(function(){
-  // object of css values, time, function to call when done.
-  $(".dim").animate({"opacity": 1.0, "fontSize": "30px"}, 10000, function(){
-  });
+   var getter = $.ajax({
+      url: 'https://www.googleapis.com/books/v1/volumes?q=quilting',
+      method: "GET",
+      dataType: "json"
 
-  var results = playlist["results"]
-  var timer = 0;
+}).done(function(response){
+   var results = response["items"];
+   var timer = 0;
 
-  results.forEach(function(element, index){
-    var my_id = "song" + index;
-    $("#container").append('<div id='+my_id+' class="dim">' + results[index]["trackName"]  + '</div>')
-    var my_div= $("#" + my_id);
+    results.forEach(function(e,i){
 
-    my_div.delay(timer).animate({"opacity": 1.0}, 3000);
-    timer += 10;
+      var bookTitles = results[i].volumeInfo.title
+      var my_id = "title" + i;
 
-  });
+    $('#container').append("<div id = "+my_id+" class='dim'>" + bookTitles +"</div>");
 
+      var my_div = $("#" + my_id)
+      my_div.delay(timer).animate({"opacity": 1.0}, 1000);
+      timer += 200;
 
-
-});
+     })
+   });
+ });
+})
