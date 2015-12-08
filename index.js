@@ -49,9 +49,9 @@ function bringToLife(stuff, i){
   $(misc).append('<p>Page Count:' + stuff.pageCount + '</p>');
   $(misc).append('<p>Rating :' + stuff.rating + '</p>');
   $(newDiv).delay(800+(i*50)).fadeIn(500);
+  $(newDiv).delay(800+(i*50)).animate({"height" : "400px"}, 800);
 
 }
-
 
 //
 // var i = 0;
