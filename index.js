@@ -10,9 +10,10 @@ $("button").click(function(){
     var timer = 0;
 
     for(var i = 0 ; i < data["results"][0]["address_components"].length; i++) {
-      $("ul").append("<li class='dim'>" + data["results"][0]["address_components"][i]["long_name"] + "</li>").slideDown("slow");
-      $("<li class='dim'>" + data["results"][0]["address_components"][i]["long_name"] + "</li>").appendTo($("ul")).slideDown("slow");
-      timer += 500;
+      $("ul").append("<li>" + data["results"][0]["address_components"][i]["long_name"] + "</li>")
+      $("li").delay(timer).animate({"font-size": "36px"}, 2000);
+      timer += 50;
     }
+    $("li").animate({"font-size": "16px"}, 1000);
   });
 });
