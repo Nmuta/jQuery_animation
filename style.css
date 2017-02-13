@@ -1,1 +1,43 @@
 .dim{opacity: 0.0}
+
+.hidden{
+  display: none;
+}
+
+div{
+  margin: 0;
+}
+
+/*#container{
+  position: relative;
+}*/
+
+img{
+  margin: 0;
+}
+
+.bookContainer{
+  height: 500px;
+  width: 300px;
+  background-color: grey;
+  border-radius: 20px;
+  text-align: center;
+  float: left;
+  display: none;
+}
+
+.bookContainer h2{
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.moreInfo{
+  width: 250px;
+  margin: 30px 25px;
+  font-size: 13px;
+}
+
+
+.moreInfo div{
+  display: inline-block;
+}
